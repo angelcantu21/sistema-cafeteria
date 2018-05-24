@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E6B337DA-41B0-4C3A-8500-8B870DB89167}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProyectoCafeteriaUTE</RootNamespace>
+    <AssemblyName>ProyectoCafeteriaUTE</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\CARPETA ARCHIVOS\PROGRAMMING SOURCES\RECURSOS C#\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CatalogoForm\Catalogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatalogoForm\Catalogo.Designer.cs">
+      <DependentUpon>Catalogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CorteForm\Corte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CorteForm\Corte.Designer.cs">
+      <DependentUpon>Corte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CorteForm\CorteCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CorteForm\CorteCaja.Designer.cs">
+      <DependentUpon>CorteCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CorteForm\CorteGanancias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CorteForm\CorteGanancias.Designer.cs">
+      <DependentUpon>CorteGanancias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HerramientasForm\AgregarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HerramientasForm\AgregarUsuario.Designer.cs">
+      <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HerramientasForm\EliminarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HerramientasForm\EliminarUsuario.Designer.cs">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HerramientasForm\Herramientas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HerramientasForm\Herramientas.Designer.cs">
+      <DependentUpon>Herramientas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HerramientasForm\ModificarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HerramientasForm\ModificarUsuario.Designer.cs">
+      <DependentUpon>ModificarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HerramientasForm\VerUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HerramientasForm\VerUsuario.Designer.cs">
+      <DependentUpon>VerUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LlenarTextBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LlenarTextBox.Designer.cs">
+      <DependentUpon>LlenarTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MontoInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MontoInicio.Designer.cs">
+      <DependentUpon>MontoInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductosForm\AgregarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductosForm\AgregarProducto.Designer.cs">
+      <DependentUpon>AgregarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductosForm\EditarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductosForm\EditarProducto.Designer.cs">
+      <DependentUpon>EditarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductosForm\EliminarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductosForm\EliminarProducto.Designer.cs">
+      <DependentUpon>EliminarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductosForm\Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductosForm\Productos.Designer.cs">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductosForm\VerProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductosForm\VerProductos.Designer.cs">
+      <DependentUpon>VerProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectorProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectorProductos.Designer.cs">
+      <DependentUpon>SelectorProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaPrincipal.Designer.cs">
+      <DependentUpon>VentanaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CatalogoForm\Catalogo.resx">
+      <DependentUpon>Catalogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CorteForm\Corte.resx">
+      <DependentUpon>Corte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CorteForm\CorteCaja.resx">
+      <DependentUpon>CorteCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CorteForm\CorteGanancias.resx">
+      <DependentUpon>CorteGanancias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HerramientasForm\AgregarUsuario.resx">
+      <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HerramientasForm\EliminarUsuario.resx">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HerramientasForm\Herramientas.resx">
+      <DependentUpon>Herramientas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HerramientasForm\ModificarUsuario.resx">
+      <DependentUpon>ModificarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HerramientasForm\VerUsuario.resx">
+      <DependentUpon>VerUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LlenarTextBox.resx">
+      <DependentUpon>LlenarTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MontoInicio.resx">
+      <DependentUpon>MontoInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductosForm\AgregarProducto.resx">
+      <DependentUpon>AgregarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductosForm\EditarProducto.resx">
+      <DependentUpon>EditarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductosForm\EliminarProducto.resx">
+      <DependentUpon>EliminarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductosForm\Productos.resx">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductosForm\VerProductos.resx">
+      <DependentUpon>VerProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectorProductos.resx">
+      <DependentUpon>SelectorProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaPrincipal.resx">
+      <DependentUpon>VentanaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Imagenes\1490770871_key_login.png" />
+    <Content Include="Imagenes\Acerca de.png" />
+    <Content Include="Imagenes\actualizar.png" />
+    <Content Include="Imagenes\archivo.png" />
+    <Content Include="Imagenes\banner-azul.png" />
+    <Content Include="Imagenes\borrar.png" />
+    <Content Include="Imagenes\buscar.png" />
+    <Content Include="Imagenes\CALENDAR.png" />
+    <Content Include="Imagenes\calendario.png" />
+    <Content Include="Imagenes\COBRA.png" />
+    <Content Include="Imagenes\cobrar.png" />
+    <Content Include="Imagenes\esta.jpg" />
+    <Content Include="Imagenes\hamburgesa.png" />
+    <Content Include="Imagenes\icono acceso.png" />
+    <Content Include="Imagenes\if_access_16x16_9711.ico" />
+    <Content Include="Imagenes\if_Artboard_1_1790663.png" />
+    <Content Include="Imagenes\if_cardboard-box_307356.png" />
+    <Content Include="Imagenes\if_chips_1760340.png" />
+    <Content Include="Imagenes\if_client_1931212.png" />
+    <Content Include="Imagenes\if_clock_285673.png" />
+    <Content Include="Imagenes\if_Delete_1493279.png" />
+    <Content Include="Imagenes\if_food-hamburder-v1_2386376.ico" />
+    <Content Include="Imagenes\if_fries_1760349.ico" />
+    <Content Include="Imagenes\if_fries_1760349.png" />
+    <Content Include="Imagenes\if_info_sign_button_information_help_1076775.png" />
+    <Content Include="Imagenes\if_minus_1645995.png" />
+    <Content Include="Imagenes\if_Money_206469.png" />
+    <Content Include="Imagenes\if_movie-06_1277187.png" />
+    <Content Include="Imagenes\if_paint_17022.png" />
+    <Content Include="Imagenes\if_Save_1493294.png" />
+    <Content Include="Imagenes\if_shopping-cart_216477.png" />
+    <Content Include="Imagenes\if_support_701493.png" />
+    <Content Include="Imagenes\if_tower_748987.png" />
+    <Content Include="Imagenes\if_trash_173120.png" />
+    <Content Include="Imagenes\if_user-trash-full_118957.png" />
+    <Content Include="Imagenes\if_wait_16x16_10084.ico" />
+    <Content Include="Imagenes\if_xfce-system-exit_23651.png" />
+    <Content Include="Imagenes\organigrama.png" />
+    <Content Include="Imagenes\pcs.png" />
+    <Content Include="Imagenes\power off.png" />
+    <Content Include="Imagenes\relojito.png" />
+    <Content Include="Imagenes\Utilidades.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
+      <Project>{EB2D4EC4-A18D-49D2-8760-242CB513A233}</Project>
+      <Name>CapaDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaNegocios\CapaNegocios.csproj">
+      <Project>{b01e9cca-2926-4770-a1fa-a88131739780}</Project>
+      <Name>CapaNegocios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
